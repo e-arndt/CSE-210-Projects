@@ -7,28 +7,67 @@ namespace Lists
 
         internal class Program
         {
+             private static void NumberList()
+            {
+                List<int> numbers = new List<int>();
+
+                int UserNum   = -100;
+                int NumSum    = 0;
+                double NumAvg = 0;
+                int NumMax    = 0;
+
+                Console.Clear();
+                Console.WriteLine("Create a list of numbers, type 0 when finished [# / 0] ");
+                
+
+                while (UserNum != 0)
+                {
+                    Console.Write("Enter number: ");
+                    string MyNum = Console.ReadLine();
+                    UserNum = int.Parse(MyNum);
+                    numbers.Add(UserNum);
+                }
+
+                Console.Clear();
+
+                foreach (int num in numbers)
+                {
+                    NumSum = (NumSum + num);
+
+                }
+
+                NumAvg = numbers.Average();
+                Math.Round(NumAvg, 2);
+                
+                NumMax = numbers.Max();
+
+                Console.WriteLine($"The total sum is     : {NumSum} ");
+                Console.WriteLine($"The average is       : {NumAvg} ");
+                Console.WriteLine($"The largest number is: {NumMax} ");
+                Console.WriteLine();
+
+            }
+
+
+
             static void Main(string[] args)
             {
-        List<string> words = new List<string>();
+                char input;
+                
+                do
+                {
+                    NumberList();
 
-        words.Add("phone");
-        words.Add("keyboard");
-        words.Add("mouse");
+                    Console.Write("Would you like to play again? [Y / N]");
+                    input = Convert.ToChar(Console.ReadLine());
+                }
 
-        Console.Clear();
-        Console.Write("Word count of the lists is: ");
-        Console.WriteLine(words.Count);
-        Console.WriteLine();
+                while (input == 'y');
 
-        Console.WriteLine("Words in the lists are: ");
-        
-        foreach (string word in words)
-        {
-            Console.WriteLine(word);
-        }
-
-        Console.WriteLine();
-        Console.WriteLine();
+                Console.WriteLine();
+                Console.WriteLine("Thanks for playing... Bye!");
+                Thread.Sleep(1250);
+                Console.Clear();
 
             }
         }
