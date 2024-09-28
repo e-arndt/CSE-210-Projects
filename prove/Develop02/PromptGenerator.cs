@@ -1,5 +1,7 @@
+// Define the PromptGenerator class
 public class PromptGenerator
 {
+    // Create a list of strings called _prompts and add "prompts" to that list
     public List<string> _prompts = new List<string>
     { "Who was the most interesting person I interacted with today?",
         "What was the best part of my day?",
@@ -41,33 +43,31 @@ public class PromptGenerator
         "Where did you serve your mission or where would you want to serve?",
         "What is something you could say that would make someone happy?"
         };
-    //public List<string> _PromptGen = new List<string>(_prompts);
+    
 
     public PromptGenerator()
     {
 
     }
 
+    
     public void Display()
     {
-        Random rnd = new Random();
-        int ThisOne = rnd.Next(_prompts.Count);
-        string RandomPrompt = (_prompts[ThisOne]);
-        Console.WriteLine(_prompts);
+        
     }
+
+
+    // Function to generate a random prompt
     public string GetRandomPrompt()
     {
+        // New random function
         Random rnd = new Random();
+        // Set variable 'ThisOne' to a number ranging up to the .Count (# of Prompts in list)
         int ThisOne = rnd.Next(_prompts.Count);
+        // Use that random number in ThisOne to select that prompt and store it in the variable RandomPrompt
         string RandomPrompt = (_prompts[ThisOne]);
-
+        // Return that prompt to the code that called this function
         return RandomPrompt;
         
-        // Random rnd = new Random();
-        // int ThisOne = rnd.Next(PromptList.Count);
-
-        // Console.WriteLine(PromptList[ThisOne]);
-        // string RandomPrompt = (PromptList[ThisOne]);
-        // return RandomPrompt;
     }
 }
