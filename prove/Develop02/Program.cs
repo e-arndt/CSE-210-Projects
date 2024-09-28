@@ -1,12 +1,24 @@
+// Creativity: Datestamp shows Date and Time, in case of multiple entires per day, rather than just a date.
+// Each menu function has its own "page" with a title banner for a cleaner, eaiser to read look.
+// Added messages to user to inform them when files and data are found, not found, created, saved and loaded.
+// User only needs to type the name of the file, the program deals with the file extension like .txt
+// Some error handling for invalid inputs
+// Added a gracefull program exit and lots of text / screen formating for a clean and organized look.
+// Added lots of my own prompt messages
+
+
 using System;
 using System.IO;
 
 
+// Define the Program class
 class Program
 {
 
+    // The Main function
     static void Main(string[] args)
     {
+        // Set the variable choice to 0
         int choice = 0;
     
         // Clear screen, Display Welcome Banner
