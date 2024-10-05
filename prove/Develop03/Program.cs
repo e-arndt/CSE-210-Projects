@@ -4,6 +4,7 @@
 // Add a text file and function that loads multiple scriptures from the text file
 // Add function to randomly select the scripture shown to the user
 // Add a function that displays a message to user when they quit or finish using the program
+// Use of namespace for added encapsulation
 
 using System;
 using System.IO;
