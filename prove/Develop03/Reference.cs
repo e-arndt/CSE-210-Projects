@@ -1,6 +1,6 @@
 using System;
 
-// Adding a namespace because... it does help provided added encapsulation of the code within
+// Adding a namespace because... it helps provide added encapsulation of the code within
 namespace ScriptureMemorization
 {
 
