@@ -11,7 +11,8 @@ public class Circle : Shape
 
     public override double GetArea()
     {
-        double rawArea = (22/7.0028174985) * (_rad * _rad);
+        double rawArea = Math.PI * (_rad * _rad);
+        //double rawArea = (22/7.0028174985) * (_rad * _rad);
         double cArea = Math.Round(rawArea, 2);
         return cArea;
     }
