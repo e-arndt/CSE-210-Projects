@@ -8,10 +8,10 @@ public abstract class Shape
         _color = color;
     }
 
-    public void SetColor(string color)
-    {
-        _color = color;
-    }
+    // public void SetColor(string color)
+    // {
+    //     _color = color;
+    // }
 
 
     public string GetColor()
@@ -20,9 +20,12 @@ public abstract class Shape
     }
 
 
-    public virtual double GetArea()
-    {
-        return 0;
-    }
+    // public virtual double GetArea()
+    // {
+    //     return 0;
+    // }
 
+
+    public abstract double GetArea();
+    
 }
