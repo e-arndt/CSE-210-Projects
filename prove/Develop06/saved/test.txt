@@ -1,0 +1,3 @@
+0
+Simple Goal: Pray | Pray in public when asked | 75 | False
+Simple Goal: Read | Read a scripture in class | 50 | False
