@@ -1,3 +1,6 @@
+// Creativity: Create a clean easy to read menu system that has individual menus
+// for each available function. Most menu functions are reusable by each type of goal.
+
 using System;
 using System.IO;
 
